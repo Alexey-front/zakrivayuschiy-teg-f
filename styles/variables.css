@@ -1,1 +1,37 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+  --Inter-variable: Inter;
+  --Press-Start-2P: "Press Start 2P";
+  --Inter-text-weight: 410;
+  --Inter-header-weight: 715;
+  --first-gradient: repeating-linear-gradient(
+    to right,
+    #d3d3d3,
+    #d3d3d3 2px,
+    transparent 2px,
+    transparent 4px
+  );
+  --second-gradient: repeating-linear-gradient(
+    to bottom,
+    #d3d3d3,
+    #d3d3d3 2px,
+    transparent 2px,
+    transparent 4px
+  );
+  --third-gradient: linear-gradient(#e7e7e7 0.01%, #1a1a1a);
+  --inline-elements-size: clamp(375px, calc(260.563px + 30.516vw), 700px);
+  --header-padding-block: clamp(120px, calc(117.183px + 0.751vw), 128px);
+  --header-padding-inline: clamp(16px, calc(-21.5px + 10vw), 122.5px);
+  --header-title-font-size: clamp(49px, calc(43.366px + 1.502vw), 65px);
+  --header-title-span-font-size: clamp(14px, calc(10.831px + 0.845vw), 23px);
+  --border-sections: 2px solid black;
+  --card-title-padding: 4px 10px;
+  --text-stroke: 1px rgba(255, 255, 255, 1);
+  --dialog-elements-layout: clamp(30px, calc(43.521px - 0.939vw), 40px);
+  --width-svg-image: 21;
+  --height-svg-image: 21;
+  --color-blend: white;
+  --floppy-size: 21px;
+  --contour-color: black;
+  --fill-color: red;
+}
