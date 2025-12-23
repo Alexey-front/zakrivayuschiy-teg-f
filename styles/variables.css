@@ -1,9 +1,9 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
-  --Inter-variable: Inter;
-  --Press-Start-2P: "Press Start 2P";
-  --Inter-text-weight: 410;
-  --Inter-header-weight: 715;
+  --main-font: Inter;
+  --side-font: "Press Start 2P";
+  --main-text-weight: 410;
+  --main-header-weight: 715;
   --first-gradient: repeating-linear-gradient(
     to right,
     #d3d3d3,
@@ -34,4 +34,10 @@
   --floppy-size: 21px;
   --contour-color: black;
   --fill-color: red;
+}
+
+@media (width <= 375px) {
+  :root {
+    --floppy-size: 28px;
+  }
 }

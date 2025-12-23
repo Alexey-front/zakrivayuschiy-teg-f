@@ -11,14 +11,14 @@
 */
 
 .page {
-  font-family: var(--Inter-variable), sans-serif;
+  font-family: var(--main-font), sans-serif;
   background-image: var(--first-gradient), var(--second-gradient),
     var(--third-gradient);
   background-size: cover;
   background-attachment: fixed;
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  font-variation-settings: "wght" var(--Inter-text-weight);
+  font-variation-settings: "wght" var(--main-text-weight);
 }
 
 .section {
@@ -40,7 +40,7 @@
 }
 
 .header__title {
-  font-family: var(--Press-Start-2P), "Press Start";
+  font-family: var(--side-font), monospace;
   font-weight: 400;
   font-size: var(--header-title-font-size);
 }
@@ -58,16 +58,12 @@
   inline-size: clamp(375px, calc(260.563px + 30.516vw), 700px);
 }
 
-li.card__list_item:nth-child(2n + 3) {
-  margin-block-end: 50px;
-}
-
 .card__title {
   padding: var(--card-title-padding);
-  font-family: var(--Inter-variable), sans-serif;
+  font-family: var(--main-font), sans-serif;
   font-size: 18px;
   line-height: 1.21;
-  font-variation-settings: "wdth" 715;
+  font-variation-settings: "wdth" var(--main-header-weight);
 }
 
 .card__text--padding {
@@ -75,10 +71,10 @@ li.card__list_item:nth-child(2n + 3) {
 }
 
 .card__text {
-  font-family: var(--Inter-variable);
+  font-family: var(--main-font), sans-serif;
   font-size: 18px;
   line-height: 21px;
-  font-variation-settings: "wdth" 410;
+  font-variation-settings: "wdth" var(--main-text-weight);
 }
 
 .card__image-container {
@@ -94,7 +90,7 @@ li.card__list_item:nth-child(2n + 3) {
   top: 25px;
   right: 25px;
   color: rgba(0, 0, 0, 0.4);
-  font-family: var(--Press-Start-2P), "Press Start";
+  font-family: var(--side-font), monospace;
   font-weight: 400;
   font-size: 14px;
   text-transform: uppercase;
@@ -123,6 +119,7 @@ li.card__list_item:nth-child(2n + 3) {
 
 button {
   background-color: transparent;
+  cursor: pointer;
 }
 
 .button-like {
@@ -147,14 +144,11 @@ button {
   transition: border-color 0.3s ease;
 }
 
-.like-icon {
-}
-
 .button__text {
   position: relative;
   z-index: 1;
   color: var(--color-blend);
-  font-family: var(--Press-Start-2P), "Press Start";
+  font-family: var(--side-font), monospace;
   font-weight: 400;
   font-size: 14px;
   line-height: 90%;
@@ -173,18 +167,11 @@ button {
   padding: 12.5px 37px;
 }
 
-.footer {
-  display: flex;
-  justify-content: center;
-  margin: 0 auto 100px auto;
-  margin-bottom: 100px;
-  inline-size: var(--inline-elements-size);
-}
-
 .footer__button {
   display: flex;
   align-items: center;
   gap: 8px;
+  margin: 0 auto 100px auto;
   border: 2px solid black;
   padding: 15px 18px;
   background-color: white;
@@ -215,8 +202,12 @@ button {
   padding-block-start: 30px;
 }
 
+.dialog__container .dialog__button {
+  text-transform: uppercase;
+}
+
 .dialog__text {
-  font-family: var(--Press-Start-2P), "Press Start";
+  font-family: var(--side-font), monospace;
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
@@ -386,8 +377,5 @@ button {
   .footer__button {
     flex-direction: column;
     padding: 15.71px 18px;
-  }
-  :root {
-    --floppy-size: 28px;
   }
 }
